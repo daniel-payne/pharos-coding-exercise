@@ -2,7 +2,7 @@ import { FC } from "react";
 
 import CapabilityDisplay from "src/components/capability/CapabilityDisplay";
 
-import "./CapabilitySelection.css";
+import "./CapabilityNavigation.css";
 
 type Props = {
   options: any[];
@@ -11,13 +11,11 @@ type Props = {
   [key: string]: any;
 };
 
-const CapabilitySelection: FC<Props> = (props) => {
+const CapabilityNavigation: FC<Props> = (props) => {
   const { options, selected, onChoose } = props;
 
   return (
-    <div className="CapabilitySelection">
-      <h4>Navigation</h4>
-
+    <div className="CapabilityNavigation">
       {options.map((item: any) => (
         <CapabilityDisplay
           key={item.name}
@@ -30,4 +28,4 @@ const CapabilitySelection: FC<Props> = (props) => {
   );
 };
 
-export default CapabilitySelection;
+export default CapabilityNavigation;

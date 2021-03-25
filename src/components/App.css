@@ -4,7 +4,7 @@
 }
 
 .App div {
-  border: 1px solid gainsboro;
+  /* border: 1px solid gainsboro; */
   box-sizing: border-box;
   overflow: auto;
 }
