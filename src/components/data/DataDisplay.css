@@ -1,0 +1,5 @@
+.DataDisplay {
+  width: calc(100% - 400px);
+  display: inline-block;
+  height: 100%;
+}

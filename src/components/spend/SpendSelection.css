@@ -1,0 +1,18 @@
+.SpendSelection {
+  padding: 8px;
+}
+
+.SpendSelection input {
+  width: 100%;
+}
+
+/* NOTE : BEM style for sub components */
+.SpendSelection .display__float-left {
+  display: inline;
+  float: left;
+}
+
+.SpendSelection .display__float-right {
+  display: inline;
+  float: right;
+}

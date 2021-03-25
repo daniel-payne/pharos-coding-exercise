@@ -1,0 +1,26 @@
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.App div {
+  border: 1px solid gainsboro;
+  box-sizing: border-box;
+  overflow: auto;
+}
+/* This does a clearfix hack along with overflow auto */
+.App div ::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.App h1 {
+  margin: 0;
+}
+
+.DataDisplay {
+  width: calc(100% - 400px);
+  display: inline-block;
+  height: 100%;
+}
