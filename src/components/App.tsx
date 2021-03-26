@@ -47,7 +47,7 @@ const App: FC<Props> = () => {
   if (loading) return <div>fetching...</div>;
   if (error) return <div>error... {error}</div>;
 
-  const handelChoose = (newCapability: any) => {
+  const handleChoose = (newCapability: any) => {
     setCapability(newCapability);
   };
 
@@ -57,7 +57,7 @@ const App: FC<Props> = () => {
         <CapabilitySelection
           options={navigation}
           selected={capability}
-          onChoose={handelChoose}
+          onChoose={handleChoose}
         ></CapabilitySelection>
         <SpendSelection
           maxSpend={maxSpend}
