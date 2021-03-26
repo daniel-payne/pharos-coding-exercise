@@ -8,9 +8,7 @@ type Props = {
   [key: string]: any;
 };
 
-const CapabilityChildren: FC<Props> = (props) => {
-  const { capability } = props;
-
+const CapabilityChildren: FC<Props> = () => {
   return <div className="CapabilityChildren"></div>;
 };
 

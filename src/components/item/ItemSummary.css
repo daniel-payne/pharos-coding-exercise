@@ -1,0 +1,7 @@
+.ItemSummary {
+  border: 1px solid gainsboro;
+  text-align: center;
+  display: inline-block;
+  width: 200px;
+  margin: 8px;
+}

@@ -1,10 +1,12 @@
 # Notes
 
+This is _NOT_ how I would layout production code, it needs more work on typescript types, and cutting out code into UTIL functions to reduce every file to a max of 50 lines : makes it more maintainable.
+
 I use ": any" for all types until i know more about how the function works then "funnel down" the types
 
 I add "[key: string]: any;" to app props ant type definitions until i narrow down the object and how it is used
 
-I always use "<div className="SpendSelection">" on my outer component, and almost never use fragments : so testers can reason about the code that generates the HTML
+I always use `<div className="SpendSelection">` on my outer component, and almost never use fragments : so testers can reason about the code that generates the HTML
 
 I always start my components as
 
@@ -25,6 +27,8 @@ const DataDisplay: FC<Props> = (props) => {
 
 export default DataDisplay;
 ```
+
+I have only included one test, on the utils/nameSort as a demo of how i would run two windows "npm start" and "npm test" during development
 
 # Pharos Coding Exercise
 
